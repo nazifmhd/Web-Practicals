@@ -1,0 +1,31 @@
+body	 {
+	background-color: white;
+}
+
+*	{
+	text-align:center;
+}
+
+h1	{
+	color: black;
+	text-decoration:underline;
+}
+
+p	{
+	font-style:italic;
+}
+
+h4	{
+	font-weight:bold;
+}
+
+table	{
+	width:100%;
+	background-color:red;
+	color:yellow;
+}
+
+div {
+		margin: 0 680px 0 680px;
+		border:solid black 5px;
+}

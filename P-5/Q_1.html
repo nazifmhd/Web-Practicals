@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+		
+	<head>
+		<title>Employee Registration Form</title>
+	</head>
+	<body bgcolor = "green">
+		
+		<img src="employee_icon.jfif" height="80" width="80">	
+		<font color="red" size="10">Employee Registration Form</font>
+		<br><br>
+		<form method="post" action="">
+		<table width="50%">
+			
+			<tr>
+				<td></td>
+				<td> <input type="radio" id="gender" name="gender" value="Mr." checked>Mr.
+				   	<input type="radio" id="gender" name="gender" value="Mrs.">Mrs.
+					<input type="radio" id="gender" name="gender" value="Ms.">Ms.
+				</td>
+			</tr>
+			
+			<tr>
+				<td> First Name </td>
+				<td><input type="text" name="fname" placeholder="First Name">
+			</tr>
+			
+			<tr>
+				<td> Last Name </td>
+				<td><input type="text" name="lname" placeholder="Last Name">
+			</tr>
+			
+			<tr>
+				<td> Email Address</td>
+				<td><input type="email" name="email" placeholder="Email Address">
+			</tr>
+			
+			<tr>
+				<td> City </td>
+				<td><input type="text" name="city" placeholder="City">
+			</tr>
+			
+			<tr>
+				<td>Province</td>
+				<td><select name="Province">
+					<option value="Western">Western
+					<option value="Central">Central
+					<option value="North">North
+					<option value="Sourthern">Sourthern
+					</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Upload</td>
+				<td><input type="file" name="photo"></td>
+			</tr>
+			
+			<tr>
+				<td>Mobile</td>
+				<td><input type="number" name="mob" placeholder="+94"></td>
+			</tr>
+			
+			<tr>
+				<td>Language known</td>
+				<td><input type="checkbox" name="lk" value="English" checked>English</td>
+			</tr>
+			
+			<tr>
+				<td></td>
+				<td><input type="checkbox" name="lk" value="Sinhala" >Sinhala</td>
+			</tr>
+			
+			<tr>
+				<td></td>
+				<td><input type="checkbox" name="lk" value="Tamil" >Tamil</td>
+			</tr>
+			
+			<tr >
+				<td>Aditional Information</td>
+				<td><textarea rows="3" cols="20" name="Details"placeholder="optional"></textarea></td>
+			</tr>
+			
+			<tr>
+				<td></td>
+				<td><input type="button" Value="Submit">
+					<input type="button" Value="Reset">
+				</td>
+			<tr>
+			
+		</table>
+		
+		</form>	
+			
+	</body>
+</html>
