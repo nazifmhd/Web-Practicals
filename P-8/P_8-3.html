@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Numbers</title>
+
+        <script>
+            function calculateSum() {
+
+                var num1 = parseInt(document.getElementById('number1').value);
+                var num2 = parseInt(document.getElementById('number2').value);
+                ;
+
+                var campare = num1 && num2 ;
+
+                document.getElementById("sum").value = campare;
+            }
+        </script>
+
+    </head>
+    <body>
+        <form>
+
+        <h1>Add Three Numbers</h1>
+
+            <label>Numbers 1:</label>
+            <input type="number" name="numbers" id="number1" placeholder="Enter number1" required />
+            <br><br>
+
+            <label>Numbers 2:</label>
+            <input type="number" name="numbers" id="number2" placeholder="Enter number2" required />
+            <br><br>
+            
+            <input type="button" name="Compare" value="Compare" onclick="campareNum()" />
+            <br><br>
+
+            <input type="text" id="sum">
+
+        </form>    
+    </body>
+</html>
