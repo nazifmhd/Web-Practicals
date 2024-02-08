@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practical 09_2-3</title>
+    </head>
+
+    <body>
+//9-2
+        <h3>1 to 10</h3>
+        <p id = "number"></p>
+            <script>
+                
+                for( var i = 1; i <= 10; i++){
+                    document.getElementById("number").innerHTML += i +"<br/>";
+                }
+            </script>
+
+//9-3
+        <h3>Sum of 1 to 10</h3>
+        <p id="sum"></p>
+        <script>
+            
+            let sum = 0;
+            for( var i = 1; i <= 10; i++){
+                sum = sum + i;
+            }
+            document.getElementById("sum").innerHTML = "Sum of 1 to 10 num is : "+sum;
+        </script>
+
+// another method
+<script>
+                
+    for( var i = 1; i <= 10; i++){
+        document.write(i+"<br>");
+    }
+
+    let sums = 0;
+    for( var i = 1; i <= 10; i++) {
+                sums +=  i;
+    }
+    document.write(sums);
+
+
+</script> 
+    </body>
+</html>

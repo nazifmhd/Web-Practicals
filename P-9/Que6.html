@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>Textbox and Button Actions</title>
+    <style>
+    
+    input, button {
+      margin: 10px;
+      padding: 5px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <input type="text" id="textbox01">
+  <button onclick="Color()">Button 01</button>
+
+  <input type="text" id="textbox02">
+  <button onmouseover="FontStyle()">Button 02</button>
+
+  <input type="text" id="textbox03" onmouseout="changeTypedTextFontStyle()">
+
+  <script>
+    function Color() {
+      var textbox01 = document.getElementById("textbox01");
+      textbox01.style.backgroundColor = "red";
+    }
+
+    function FontStyle() {
+      var textbox02 = document.getElementById("textbox02");
+      textbox02.style.fontFamily = "Arial Rounded MT Bold";
+      textbox02.style.fontSize = "20px";
+    }
+
+    function changeTypedTextFontStyle() {
+      var textbox03 = document.getElementById("textbox03");
+      textbox03.style.fontFamily = "Arial Black";
+      textbox03.style.fontSize = "20px";
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practical 09-1</title>
+    </head>
+
+    <body>
+        <h1>Elements of the Array</h1>
+        <p id="basket"></p>
+
+        <h1>Length of the Array</h1>
+        <p id="len"></p>
+
+        <h1>First Element of the array</h1>
+        <p id="first"></p>
+
+        <h1>Second Element of the array</h1>
+        <p id="second"></p>
+
+        <h1>Last Element of the array</h1>
+        <p id="last"></p>
+
+        <h1>New Elements of the array</h1>
+        <p id="new_basket"></p>
+
+        <h1> New Length of the Array</h1>
+        <p id="new_len"></p>
+        
+        <h1>Last Element of the array</h1>
+        <p id="last1"></p>
+
+        <h1>Change Elements of the array</h1>
+        <p id="cbasket"></p>
+
+        <h1>Delete Elements of the array</h1>
+        <p id="dbasket"></p>
+        
+        <h1>Sort Elements of the array</h1>
+        <p id="sortbasket"></p>
+        <script>
+            var vegetables =["Carrot","Beans","Potatos","Pumpkin","Cabbage"];
+            document.getElementById("basket").innerHTML = vegetables;
+            document.getElementById("len").innerHTML = vegetables.length;
+            document.getElementById("first").innerHTML = vegetables[0]
+            document.getElementById("second").innerHTML = vegetables[1]
+            document.getElementById("last").innerHTML = vegetables[vegetables.length-1];
+
+            vegetables.push("Tomato");
+            document.getElementById("new_basket").innerHTML = vegetables;
+            document.getElementById("new_len").innerHTML = vegetables.length;
+            document.getElementById("last1").innerHTML = vegetables[vegetables.length-1];
+            
+            vegetables[3] = "Garlic";
+            document.getElementById("cbasket").innerHTML = vegetables;
+            
+            delete vegetables[2];
+            document.getElementById("dbasket").innerHTML = vegetables;
+
+            vegetables.sort();
+            document.getElementById("sortbasket").innerHTML = vegetables;
+
+        </script>
+    </body>
+</html>
